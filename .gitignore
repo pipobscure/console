@@ -1,0 +1,7 @@
+node_modules/
+test/
+dist/
+
+pipobscure-console-*.tgz
+**/.DS_Store
+**/._*
