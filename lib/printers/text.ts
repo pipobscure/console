@@ -1,4 +1,4 @@
-import type { LogLevel, WriteFunction } from './main';
+import type { LogLevel, WriteFunction } from './main.js';
 
 const colors = {
 	Black: '\u001b[30m',

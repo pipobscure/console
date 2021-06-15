@@ -1,4 +1,4 @@
-import type { PrinterFunction, LogLevel } from './main';
+import type { PrinterFunction, LogLevel } from './main.js';
 
 class MultiPrinter {
 	#printers: PrinterFunction<any>[];

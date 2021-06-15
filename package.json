@@ -2,21 +2,26 @@
 	"name": "@pipobscure/console",
 	"version": "1.0.0",
 	"description": "Console Standard Implementation",
-	"main": "dist/console.js",
+	"main": "lib/console.js",
 	"files": [
-		"dist/console.js",
-		"dist/console.d.ts",
-		"dist/utils.d.ts",
-		"dist/printers/main.d.ts",
-		"dist/printers/text.d.ts",
-		"dist/printers/split.d.ts",
-		"dist/printers/multi.d.ts"
+		"lib/console.js",
+		"lib/console.d.ts",
+		"lib/utils.js",
+		"lib/utils.d.ts",
+		"lib/printers/main.js",
+		"lib/printers/main.d.ts",
+		"lib/printers/text.js",
+		"lib/printers/text.d.ts",
+		"lib/printers/split.js",
+		"lib/printers/split.d.ts",
+		"lib/printers/multi.js",
+		"lib/printers/multi.d.ts"
 	],
 	"type": "module",
 	"scripts": {
-		"clean": "rm -rf dist/ test/ pipobscure-console-*.tgz",
-		"build": "rollup -c rollup.config.js",
-		"test": "tsc && xutltest 'test/**/*.t.js'",
+		"clean": "rm -rf **/*.d.ts **/*.js.map **/*.js",
+		"build": "tsc",
+		"test": "tsc && xutltest 'lib/**/*.t.js'",
 		"format": "prettier --write 'lib/**/*.ts'",
 		"prepublish": "npm run clean && npm run build"
 	},
@@ -28,8 +33,6 @@
 	"devDependencies": {
 		"@types/node": "^15.12.2",
 		"@xutl/test": "^1.0.2",
-		"rollup": "^2.51.2",
-		"rollup-plugin-typescript2": "^0.30.0",
 		"typescript": "^4.3.2"
 	},
 	"private": true

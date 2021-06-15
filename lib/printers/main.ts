@@ -6,10 +6,10 @@ export interface WriteFunction {
 	(data: string): void;
 }
 
-import createTextPrinter from './text';
-import createSplitPrinter from './split';
-import createMultiPrinter from './multi';
+import createTextPrinter from './text.js';
+import createSplitPrinter from './split.js';
+import createMultiPrinter from './multi.js';
 export { createTextPrinter, createSplitPrinter, createMultiPrinter };
 
-export type { ColorScheme } from './text';
-export type { Writers } from './split';
+export type { ColorScheme } from './text.js';
+export type { Writers } from './split.js';

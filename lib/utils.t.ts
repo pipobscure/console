@@ -1,8 +1,12 @@
-import { describe, it } from '@xutl/test';
+//@ts-ignore
+import test from '@xutl/test';
+//@ts-ignore
+const { describe, it, beforeEach } = test;
+//@ts-ignore
 import assert from 'assert';
 
-import type { LogLevel } from './printers/main';
-import { hasOwn, createTrace, logger, formatter } from './utils';
+import type { LogLevel } from './printers/main.js';
+import { hasOwn, createTrace, logger, formatter } from './utils.js';
 
 describe('utils', () => {
 	describe('hasOwn', () => {

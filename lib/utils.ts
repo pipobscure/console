@@ -1,4 +1,4 @@
-import type { PrinterFunction, LogLevel } from './printers/main';
+import type { PrinterFunction, LogLevel } from './printers/main.js';
 
 export const hasOwn = Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);
 

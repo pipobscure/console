@@ -1,7 +1,7 @@
-import type { PrinterFunction, LogLevel, Writers, WriteFunction, ColorScheme } from './printers/main';
+import type { PrinterFunction, LogLevel, Writers, WriteFunction, ColorScheme } from './printers/main.js';
 
-import { hasOwn, createTrace, logger, formatter } from './utils';
-import { createSplitPrinter, createMultiPrinter, createTextPrinter } from './printers/main';
+import { hasOwn, createTrace, logger, formatter } from './utils.js';
+import { createSplitPrinter, createMultiPrinter, createTextPrinter } from './printers/main.js';
 
 declare const tag: unique symbol;
 export type Writer = { readonly [tag]: 'Writer' };

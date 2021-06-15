@@ -1,4 +1,4 @@
-import type { PrinterFunction, LogLevel } from './main';
+import type { PrinterFunction, LogLevel } from './main.js';
 
 export type Writers = { [k in LogLevel]: PrinterFunction<any> };
 

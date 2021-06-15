@@ -1,8 +1,12 @@
-import { describe, it, beforeEach } from '@xutl/test';
+//@ts-ignore
+import test from '@xutl/test';
+//@ts-ignore
+const { describe, it, beforeEach } = test;
+//@ts-ignore
 import assert from 'assert';
 
-import { createCache } from '../utils';
-import createText from './text';
+import { createCache } from '../utils.js';
+import createText from './text.js';
 
 describe('plain', () => {
 	const result = createCache();

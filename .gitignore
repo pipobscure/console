@@ -1,7 +1,10 @@
 node_modules/
-test/
-dist/
+.vscode/
 
 pipobscure-console-*.tgz
 **/.DS_Store
 **/._*
+
+**/*.js
+**/*.js.map
+**/*.d.ts
