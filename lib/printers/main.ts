@@ -8,7 +8,8 @@ export interface WriteFunction {
 
 import createTextPrinter from './text';
 import createSplitPrinter from './split';
-export { createSplitPrinter, createTextPrinter };
+import createMultiPrinter from './multi';
+export { createTextPrinter, createSplitPrinter, createMultiPrinter };
 
 export type { ColorScheme } from './text';
 export type { Writers } from './split';

@@ -1,7 +1,7 @@
 import type { PrinterFunction, LogLevel, Writers, WriteFunction, ColorScheme } from './printers/main';
 
 import { hasOwn, createTrace, logger, formatter } from './utils';
-import { createSplitPrinter, createTextPrinter } from './printers/main';
+import { createSplitPrinter, createMultiPrinter, createTextPrinter } from './printers/main';
 
 declare const tag: unique symbol;
 export type Writer = { readonly [tag]: 'Writer' };
@@ -135,6 +135,9 @@ export default class Console<T = undefined> {
 	}
 	static splitOutput(out: Writers) {
 		return createSplitPrinter(out);
+	}
+	static multiOutput(out: PrinterFunction<any>[]) {
+		return createMultiPrinter(out);
 	}
 	static output(out: WriteFunction, colors?: Partial<ColorScheme>) {
 		return createTextPrinter(out, colors);

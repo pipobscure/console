@@ -9,11 +9,12 @@
 		"dist/utils.d.ts",
 		"dist/printers/main.d.ts",
 		"dist/printers/text.d.ts",
-		"dist/printers/split.d.ts"
+		"dist/printers/split.d.ts",
+		"dist/printers/multi.d.ts"
 	],
 	"type": "module",
 	"scripts": {
-		"clean": "rm -rf dist/ test/",
+		"clean": "rm -rf dist/ test/ pipobscure-console-*.tgz",
 		"build": "rollup -c rollup.config.js",
 		"test": "tsc && xutltest 'test/**/*.t.js'",
 		"format": "prettier --write 'lib/**/*.ts'",
